@@ -1,0 +1,139 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Sonack Blog
+subtitle: # Share Makes IT Better!
+description: Keep things SIMPLE and ELEGANT
+author: sonack
+language: zh-Hans
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://sonack.top
+root: /
+#permalink: :year/:month/:day/:title/
+permalink: :year/:month/:category/:pid.html
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: README.md
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false # 打开文章资源文件夹功能
+relative_link: false # Open Relative URL
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+# auto_spacing: true  在中文和英文之间插入空格，失效！
+
+
+# Category & Tag
+default_category: something
+category_map:
+  杂项: something
+  前端: web-front
+  后端: web-end
+  游戏: game
+  音乐: music
+  编程: programming
+  数据库: database
+  软件: software
+  吐槽: oshit
+  c++: cpp
+  作业: homework
+  有趣: interesting
+  分享: share
+  生活: life
+  笔记: note
+
+
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 5
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+# theme: landscape
+theme: next
+
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: 
+    github: git@github.com:sonack/sonack.github.io.git,master
+#   gitcafe: git@git.coding.net:sonack/sonack.git,master
+  message: 更新网站于{{ now('YYYY-MM-DD HH:mm:ss') }}.
+
+
+
+# Next 头像
+avatar: http://of1cz7dcw.bkt.clouddn.com/snk_avatar.jpg
+# duoshuo_shortname: snk
+# duoshuo_hotartical: true
+baidu_analytics: 9c752050a9692e507b440db00bde5293
+google_site_verification: google8760186d18966de6
+
+# Local Search
+search:
+  path: search.xml
+  field: post
+
+# hexo-all-minifier
+html_minifier:
+  enable: true
+  exclude: 
+
+css_minifier:
+  enable: true
+  exclude: 
+    - '*.min.css'
+
+js_minifier:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude: 
+    - '*.min.js'
+
+# enable会报错，暂不使用
+image_minifier:
+  enable: false
+
+# markdown-it 配置
+markdown:
+  render:
+    html: true
+    breaks: true
