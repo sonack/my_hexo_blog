@@ -204,4 +204,5 @@ axes: list of ints
 #### 返回值
 
 ndarray
+
 ****
