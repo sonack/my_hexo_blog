@@ -1,0 +1,22 @@
+{
+  "version": "Live2DViewerEX Config 1.0",
+  "model": "leimu.moc",
+  "textures": [
+    "leimu.2048/texture_00.png",
+    "leimu.2048/texture_01.png"
+  ],
+  "layout": {
+    "center_x": 0.0,
+    "center_y": 0.0,
+    "width": 2.0
+  },
+  "motions": {},
+  "expressions": [
+    {
+      "name": "F00.exp.json",
+      "file": "expressions/F00.exp.json"
+    }
+  ],
+  "physics": "physics.json",
+  "pose": "pose.json"
+}

@@ -416,4 +416,4 @@ images: images
 version: 5.0.2
 
 # 伪春菜
-weichuncai: true
+weichuncai: false

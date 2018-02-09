@@ -137,3 +137,11 @@ markdown:
   render:
     html: true
     breaks: true
+
+# live2d
+live2d:
+    model: hijiki
+    width: 250
+    height: 500
+    opacityDefault: 0.85
+    position: left
