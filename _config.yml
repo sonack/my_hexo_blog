@@ -140,8 +140,8 @@ markdown:
 
 # live2d
 live2d:
-    model: hijiki
+    model: wanko
     width: 250
     height: 500
     opacityDefault: 0.85
-    position: left
+    position: right
